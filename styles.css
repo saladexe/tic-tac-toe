@@ -1,0 +1,349 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F87575;
+}
+
+* {
+    user-select: none;
+    transition: all 0.15s;
+}
+
+#a {
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    left: 110vw;
+    border-style: solid;
+    border-width: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 0px 100px black;
+    background-image: linear-gradient(45deg, #DE3F64, #691226);
+    z-index: 1000;
+    transition: all 1s;
+}
+
+#pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: calc(150px/2);
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#name {
+    margin-top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: calc(30%);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#gh {
+    margin-top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: calc(30%);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#ta {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 100vw;
+    background-color: black;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 1s;
+}
+
+#header {
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(149, 41, 41);
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 10px;
+    z-index: 500;
+    top: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0) 80%, black);
+}
+
+#titl {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about:hover, #desc:hover {
+    color: blue;
+}
+
+#title {
+    color: white;
+    font-family: Arial;
+    font-size: 250%;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+#main {
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+}
+
+#t, #tr, #tl, #ml, #m, #mr, #bl, #b, #br {
+    width: calc(100%/3);
+    height: calc(100%/3);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+}
+
+#t {
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: black;
+    border-width: 4px;
+    z-index: 100;
+}
+
+#tr {
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+#ml {
+    top: 51%;
+    transform: translate(0, -50%);
+    left: -1%;
+    border-bottom: solid;
+    border-top: solid;
+    border-right: solid;
+    border-color: black;
+    border-width: 4px;
+    z-index: 100;
+}
+#m {
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(110%/3);
+}
+
+#mr {
+    top: 51%;
+    left: 101%;
+    transform: translate(-100%, -50%);
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-color: black;
+    border-width: 4px;
+    z-index: 100;
+    
+}
+#bl {
+    top: 100%;
+    transform: translate(0, -100%);
+}
+#b {
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border-left: solid;
+    border-top: solid;
+    border-right: solid;
+    border-color: black;
+    border-width: 4px;
+    z-index: 100;
+}
+#br {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+
+#main > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+}
+
+#h1, #h2, #h3, #v1, #v2, #v3, #s1, #s2 {
+    pointer-events: none;
+    opacity: 0;
+    background-color: white;
+}
+
+#h1 {
+    position: inherit;
+    left: 50%;
+    top: 17.5%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: calc(35%/3);
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#h2 {
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: calc(35%/3);
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#h3 {
+    position: inherit;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: calc(35%/3);
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#v1 {
+    position: inherit;
+    left: 17.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(35%/3);
+    height: 70%;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#v2 {
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(35%/3);
+    height: 70%;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#v3 {
+    position: inherit;
+    left: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(35%/3);
+    height: 70%;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#s1 {
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg) rotate(45deg);
+    width: calc(35%/3);
+    height: 70%;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#s2 {
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg) rotate(-45deg);
+    width: calc(35%/3);
+    height: 70%;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 1500px;
+}
+
+#r {
+    width: 250px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    font-family: arial;
+    border-style: solid;
+    position: absolute;
+    left: 110%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    border-radius: 1500px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 0 15px black;
+    transition: all 0.15s, left 1s, top 1s;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+#r:hover {
+    box-shadow: 15px 15px 15px black;
+    background-color: white;
+    color: red;
+}
